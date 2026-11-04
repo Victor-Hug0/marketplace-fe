@@ -730,7 +730,7 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 
 - [x] As oito peças existem nas duas larguras.
 - [x] Nenhum gradiente, nenhuma fonte Geist, raio de 4 px.
-- [ ] Você registra a aprovação dos tokens ou a lista de ajustes. Sem essa nota, a F3 não começa.
+- [ ] Você registra a aprovação dos tokens ou a lista de ajustes. Sem essa nota, a F3 não começa. Nota de 04/11/2026: tipografia, preço, selos, cards, detalhe e Buy Box, carrinho, endereço e pedidos aprovados. O header foi recusado e refeito no estilo da referência (busca com ícone dentro do campo, Entrar e carrinho à direita, faixa de categorias). Aguarda nova nota.
 
 **Riscos.** Aprovar "no geral" e descobrir na tabela operacional que a densidade não cabe. Por isso a tabela entra nesta fase.
 
@@ -747,7 +747,7 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 - [x] F1.1.05 Carrinho de duas lojas com totais
 - [x] F1.1.06 Formulário de endereço com erro de campo
 - [x] F1.1.07 Tabela operacional e a versão em blocos no mobile
-- [ ] F1.1.08 Revisão nas duas larguras e nota de aprovação. Oficina em `/oficina`. Falta a nota.
+- [ ] F1.1.08 Revisão nas duas larguras e nota de aprovação. Oficina em `/oficina`. Nota parcial em 04/11/2026: header refeito, ainda sem aprovação.
 
 ### F2 — Conta e sessão
 
