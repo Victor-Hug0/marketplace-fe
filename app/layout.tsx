@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 
+import { SiteHeader } from "@/components/catalog/site-header";
+
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -28,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${sourceSans.variable} h-full antialiased`}>
-      <body className="min-h-full font-sans">{children}</body>
+      <body className="min-h-full font-sans">
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }

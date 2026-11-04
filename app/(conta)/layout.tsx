@@ -3,5 +3,9 @@ export default function ContaLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div data-shell="conta">{children}</div>;
+  return (
+    <div data-shell="conta" className="mx-auto w-full max-w-[28rem] px-4 py-8">
+      {children}
+    </div>
+  );
 }

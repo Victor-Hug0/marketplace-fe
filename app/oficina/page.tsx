@@ -4,7 +4,6 @@ import { AddressForm } from "@/components/account/address-form";
 import { OrdersTable } from "@/components/admin/orders-table";
 import { ProductCard } from "@/components/catalog/product-card";
 import { ProductDetail } from "@/components/catalog/product-detail";
-import { SiteHeader } from "@/components/catalog/site-header";
 import { CartReview } from "@/components/commerce/cart-review";
 import { Badge, OrderStatusBadge } from "@/components/ui/badge";
 import { Price } from "@/components/ui/price";
@@ -26,7 +25,6 @@ export default function OficinaPage() {
 
   return (
     <div className="bg-canvas text-ink">
-      <SiteHeader />
       <main className="mx-auto grid w-full max-w-[1200px] gap-6 px-4 py-6">
         <header>
           <h1 className="text-[20px] leading-6 font-semibold">
@@ -34,7 +32,7 @@ export default function OficinaPage() {
           </h1>
           <p className="mt-2 text-ink-soft">
             Peças com dados fixos, no formato da API. Esta página não entra no
-            cabeçalho da loja. A vitrine espera a sua nota sobre estas cores.
+            cabeçalho da loja.
           </p>
         </header>
 

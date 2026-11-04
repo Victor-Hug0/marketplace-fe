@@ -42,6 +42,16 @@ export async function writeSession(tokens: {
   );
 }
 
+export async function readOAuthState(): Promise<string | undefined> {
+  const jar = await cookies();
+  return jar.get(OAUTH_STATE_COOKIE)?.value;
+}
+
+export async function clearOAuthState(): Promise<void> {
+  const jar = await cookies();
+  jar.delete(OAUTH_STATE_COOKIE);
+}
+
 export async function writeOAuthState(state: string): Promise<void> {
   const jar = await cookies();
   jar.set(
