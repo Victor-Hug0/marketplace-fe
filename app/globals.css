@@ -2,12 +2,35 @@
 
 @theme inline {
   --font-sans: var(--font-source-sans), sans-serif;
+  --color-canvas: #f3f5f8;
+  --color-surface: #ffffff;
+  --color-ink: #1a2332;
+  --color-ink-soft: #5c6b7e;
+  --color-line: #d5dbe3;
+  --color-header: #1e3a5f;
+  --color-header-ink: #f4f7fb;
+  --color-action: #2f6fad;
+  --color-action-ink: #ffffff;
+  --color-promo: #3d6b4f;
+  --color-danger: #8f3d3d;
+  --color-warning: #8a6a2f;
+  --color-star: #a6843d;
+  --radius-sm: 4px;
 }
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: #1a2332;
+  background: var(--color-canvas);
+  color: var(--color-ink);
   font-size: 14px;
   line-height: 20px;
+}
+
+:focus-visible,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid var(--color-action);
+  outline-offset: 2px;
 }
