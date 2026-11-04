@@ -730,7 +730,7 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 
 - [x] As oito peças existem nas duas larguras.
 - [x] Nenhum gradiente, nenhuma fonte Geist, raio de 4 px.
-- [ ] Você registra a aprovação dos tokens ou a lista de ajustes. Sem essa nota, a F3 não começa. Nota de 04/11/2026: tipografia, preço, selos, cards, detalhe e Buy Box, carrinho, endereço e pedidos aprovados. O header foi recusado e refeito no estilo da referência (busca com ícone dentro do campo, Entrar e carrinho à direita, faixa de categorias). Aguarda nova nota.
+- [ ] Você registra a aprovação dos tokens ou a lista de ajustes. Sem essa nota, a F3 não começa. Nota de 04/11/2026: tipografia, preço, selos, cards, detalhe e Buy Box, carrinho, endereço e pedidos aprovados. O header foi recusado e refeito no estilo da referência (busca com ícone dentro do campo, Entrar e carrinho à direita, sem categorias por enquanto). Aguarda nova nota.
 
 **Riscos.** Aprovar "no geral" e descobrir na tabela operacional que a densidade não cabe. Por isso a tabela entra nesta fase.
 
