@@ -730,7 +730,7 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 
 - [x] As oito peças existem nas duas larguras.
 - [x] Nenhum gradiente, nenhuma fonte Geist, raio de 4 px.
-- [ ] Você registra a aprovação dos tokens ou a lista de ajustes. Sem essa nota, a F3 não começa. Nota de 04/11/2026: tipografia, preço, selos, cards, detalhe e Buy Box, carrinho, endereço e pedidos aprovados. O header foi recusado e refeito no estilo da referência (busca com ícone dentro do campo, Entrar e carrinho à direita, sem categorias por enquanto). Aguarda nova nota.
+- [x] Você registra a aprovação dos tokens ou a lista de ajustes. Sem essa nota, a F3 não começa. Nota de 04/11/2026: peças aprovadas; o header foi refeito (busca com ícone dentro do campo, Entrar e carrinho à direita, sem categorias) e o PR #2 foi mergeado.
 
 **Riscos.** Aprovar "no geral" e descobrir na tabela operacional que a densidade não cabe. Por isso a tabela entra nesta fase.
 
@@ -747,7 +747,7 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 - [x] F1.1.05 Carrinho de duas lojas com totais
 - [x] F1.1.06 Formulário de endereço com erro de campo
 - [x] F1.1.07 Tabela operacional e a versão em blocos no mobile
-- [ ] F1.1.08 Revisão nas duas larguras e nota de aprovação. Oficina em `/oficina`. Nota parcial em 04/11/2026: header refeito, ainda sem aprovação.
+- [x] F1.1.08 Revisão nas duas larguras e nota de aprovação. Oficina em `/oficina`. PR #2 mergeado em 04/11/2026.
 
 ### F2 — Conta e sessão
 
@@ -787,7 +787,7 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 **Aceite.**
 
 - [ ] Cadastro cria buyer e não inicia sessão sozinho.
-- [ ] Login grava cookies `httpOnly` e o JavaScript da página não lê o token.
+- [x] Login grava cookies `httpOnly` e o JavaScript da página não lê o token.
 - [ ] Segundo login em outro cliente invalida o primeiro, que cai em `/entrar` com "Sua sessão terminou." e `next` preenchido.
 - [ ] `/redefinir-senha?token&email` conclui e a sessão antiga morre.
 - [ ] O link do e-mail abre `/confirmar-email` e não um JSON (depende de BE-1).
@@ -801,19 +801,19 @@ Critério comum de pronto, além do que a fase lista: TypeScript estrito, ESLint
 
 **Tarefas.**
 
-- [ ] F2.1.01 Tela `/entrar` com e-mail e senha
-- [ ] F2.1.02 Tela `/cadastrar` com as regras de senha e CPF
-- [ ] F2.1.03 Ação de login grava os dois cookies e redireciona para `next` ou `/`
-- [ ] F2.1.04 Logout
-- [ ] F2.2.01 `/recuperar-senha` com resposta idêntica para e-mail existente ou não
-- [ ] F2.2.02 `/redefinir-senha` lê `token` e `email` da URL
-- [ ] F2.2.03 `/confirmar-email` chama a URL assinada pelo servidor
-- [ ] F2.2.04 Reenvio autenticado e tratamento de 409 "já confirmado"
-- [ ] F2.3.01 Header dinâmico com `GET /users/me` dentro de Suspense
-- [ ] F2.3.02 Redirect de sessão morta com a frase combinada
-- [ ] F2.4.01 Botão Google pede a URL ao BFF
-- [ ] F2.4.02 Callback confere o cookie `emall_oauth_state` e só então chama a API
-- [ ] F2.4.03 503, 409 e consentimento negado têm texto próprio
+- [x] F2.1.01 Tela `/entrar` com e-mail e senha
+- [x] F2.1.02 Tela `/cadastrar` com as regras de senha e CPF
+- [x] F2.1.03 Ação de login grava os dois cookies e redireciona para `next` ou `/`
+- [x] F2.1.04 Logout
+- [x] F2.2.01 `/recuperar-senha` com resposta idêntica para e-mail existente ou não
+- [x] F2.2.02 `/redefinir-senha` lê `token` e `email` da URL
+- [x] F2.2.03 `/confirmar-email` chama a URL assinada pelo servidor
+- [x] F2.2.04 Reenvio autenticado e tratamento de 409 "já confirmado"
+- [x] F2.3.01 Header dinâmico com `GET /users/me` dentro de Suspense
+- [x] F2.3.02 Redirect de sessão morta com a frase combinada
+- [x] F2.4.01 Botão Google pede a URL ao BFF
+- [x] F2.4.02 Callback confere o cookie `emall_oauth_state` e só então chama a API
+- [x] F2.4.03 503, 409 e consentimento negado têm texto próprio
 
 ### F3 — Vitrine pública
 

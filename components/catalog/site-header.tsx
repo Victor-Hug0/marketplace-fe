@@ -1,5 +1,11 @@
-import { MagnifyingGlass, ShoppingCart, User } from "@phosphor-icons/react/ssr";
+import { Suspense } from "react";
+import { MagnifyingGlass } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
+
+import {
+  GuestAccount,
+  HeaderAccount,
+} from "@/components/catalog/header-account";
 
 export function SiteHeader() {
   return (
@@ -8,25 +14,12 @@ export function SiteHeader() {
         <Link href="/" className="order-1 text-[20px] leading-6 font-semibold">
           E-mall
         </Link>
-        <div className="order-2 ml-auto flex items-center gap-4 md:order-3 md:ml-0">
-          <Link
-            href="/entrar"
-            className="inline-flex items-center gap-1.5 font-semibold"
-          >
-            <User size={18} weight="regular" aria-hidden="true" />
-            Entrar
-          </Link>
-          <Link
-            href="/carrinho"
-            className="inline-flex items-center gap-1.5 font-semibold"
-          >
-            <ShoppingCart size={18} weight="regular" aria-hidden="true" />
-            <span className="max-md:sr-only">Carrinho</span>
-          </Link>
-        </div>
+        <Suspense fallback={<GuestAccount />}>
+          <HeaderAccount />
+        </Suspense>
         <form
           role="search"
-          action="/oficina"
+          action="/busca"
           className="order-3 w-full md:order-2 md:min-w-0 md:flex-1"
         >
           <label htmlFor="busca" className="sr-only">

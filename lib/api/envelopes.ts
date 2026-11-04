@@ -38,6 +38,10 @@ export function userEnvelope<T extends z.ZodType>(user: T) {
   });
 }
 
+export const messageSchema = z.object({
+  message: z.string(),
+});
+
 export const tokenPairSchema = z.object({
   message: z.string().optional(),
   access_token: z.string().min(1),
